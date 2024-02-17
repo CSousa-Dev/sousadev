@@ -1,0 +1,14 @@
+.skills-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+
+@media (min-width: $breakpoint-width-3) {
+    .skills-list {  
+        gap: .8rem;        
+    }
+}

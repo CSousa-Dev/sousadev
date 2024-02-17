@@ -1,0 +1,28 @@
+.simple-with-dash {
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 3.6rem;
+            height: 0.1rem;
+            background-color: $font-secondary;
+        
+        }
+
+        // @include title-font-size;
+
+        font-weight: bold;
+        color: $font-secondary;
+
+        @media (max-width: 440px) {
+            &::before {
+                width: 1.6rem;
+            }
+
+            font-size: 2.4rem;
+        }
+
+}

@@ -1,0 +1,9 @@
+.simple-single-slide {
+    .swiper-pagination {
+        margin-bottom: 1rem;
+
+        .swiper-pagination-bullet-active {
+            background-color: $font-primary;
+        }
+    } 
+}

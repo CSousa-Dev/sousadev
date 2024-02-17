@@ -1,0 +1,10 @@
+.two-colors-title {
+    font-weight: 800;
+    color: $font-secondary;
+    text-transform: capitalize;
+    > span {
+        color: $font-tertiary;
+    }
+
+    @include title-font-size;
+}

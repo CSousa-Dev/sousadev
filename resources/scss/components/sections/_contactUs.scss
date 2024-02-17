@@ -1,0 +1,36 @@
+#contact-us {
+    @include lateral-layout-padding;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    @media (max-width: 880px) {
+        padding: 1rem;
+        h2 {
+            width: 100vw;
+            padding: 0;
+            text-wrap: nowrap;
+            font-size: 2.4rem;
+    
+            span {
+                text-wrap: wrap;
+                font-size: 2.4rem;
+            }
+        }
+    }
+
+}
+
+.contact-image {
+    width: 54%;
+    margin-top: -4rem;
+}
+
+
+@media (max-width: 440px) {
+    .contact-image {
+        width: 100%;
+        margin-top: -2rem
+    }
+}

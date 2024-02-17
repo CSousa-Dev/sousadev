@@ -1,0 +1,17 @@
+.simple-description {
+    color: $font-tertiary;    
+    @include text-font-size;
+
+    ul {
+
+        margin: .8rem 0;
+        display: flex;
+        gap: .4rem;
+        flex-direction:row;
+        flex-wrap: wrap;
+        li {
+            
+            font-size: 1.8rem;
+        }
+    }
+}

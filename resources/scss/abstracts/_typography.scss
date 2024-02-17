@@ -1,0 +1,110 @@
+@mixin title-font-size {
+    
+    &.text-sm {
+        font-size: 2.4rem;
+    }
+    
+    font-size: 3.6rem;
+
+    &.text-md {
+        font-size: 4.2rem;
+    }
+
+    &.text-lg {
+        font-size: 4.8rem;
+    }
+    
+    &.text-xl {
+        font-size: 6.2rem;
+    }
+
+    @media (max-width: 440px) {
+        &.text-md {
+            font-size: 2.8rem;
+        }
+
+        &.text-lg {
+            font-size: 3.6rem;
+        }
+    }
+}
+
+
+@mixin text-font-size {
+    
+    &.text-sm {
+        font-size: 1.8rem;
+    }
+
+    font-size: 2rem;
+
+    &.text-md {
+        font-size: 2.2rem;
+    }
+    
+    &.text-lg {
+        font-size: 2.8rem;
+    }
+}
+
+@mixin text-font-color {
+    &.primary {
+        color: $font-primary;
+    }
+
+    &.secondary {
+        color: $font-secondary;
+    }
+
+    &.tertiary {
+        color: $font-tertiary;
+    }
+}
+
+@mixin text-font-weight {
+    &.light {
+        font-weight: 300;
+    }
+
+    &.regular {
+        font-weight: 400;
+    }
+
+    &.medium {
+        font-weight: 500;
+    }
+
+    &.semi-bold {
+        font-weight: 600;
+    }
+
+    &.bold {
+        font-weight: 700;
+    }
+
+    &.x-bold {
+        font-weight: 800;
+    }
+}
+
+@mixin text-align {
+    &.text-center {
+        text-align: center;
+    }
+}
+
+
+p, a, p span, a span, ul, li {
+    @include text-font-size;
+    @include text-font-color;
+    @include text-font-weight;
+    @include text-align;
+}
+
+h1, h2, h3, h4, h5, h6, h1 > span, h2 > span, h3 > span, h4 > span, h5 > span, h6 > span {
+    @include title-font-size;
+    @include text-font-color;
+    @include text-font-weight;
+    @include text-align;
+}
+

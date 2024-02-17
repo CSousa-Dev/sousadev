@@ -1,0 +1,45 @@
+.skill-icon {
+    width: 10rem;
+    text-align: center;
+
+    img {
+        margin-bottom: .4rem;
+        height: 5.4rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+
+        width: 6rem;
+        img {
+            height: 2rem;
+            margin-bottom: .6rem;
+        }
+
+        p {
+            font-size: 1.2rem;   
+            font-weight: 500;
+        }
+    
+}
+
+@media(min-width: $breakpoint-width-3)
+{
+    .skill-icon {
+        width: 10rem;
+        text-align: center;
+    
+        img {
+            margin-bottom: .8rem;
+            height: auto;
+
+        }
+    
+        p {
+            font-size: 1.6rem;
+            font-weight: bold;
+        }
+    }
+}    

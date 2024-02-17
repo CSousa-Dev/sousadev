@@ -1,0 +1,114 @@
+
+@keyframes fade { 
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+@keyframes from-top { 
+    0% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+@keyframes from-right { 
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+@keyframes from-bottom { 
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+@keyframes from-left { 
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .in-view {
+        &.fade-in {
+            animation: fade 1s .6s both;
+        }
+
+        &.from-top {
+            animation: from-top 1s .6s both;
+        }
+
+        &.from-right {
+            animation: from-right 1s .6s both;
+        }
+
+        &.from-bottom {
+            animation: from-bottom 1s .6s both;
+        }
+
+        &.from-left {
+            animation: from-left 1s .6s both;
+        }
+    }
+  
+    .not-in-view {
+      opacity: 0;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .in-view {
+        &.fade-in {
+            animation: fade 1s .6s both;
+        }
+
+        &.from-top {
+            animation: from-top 1s .6s both;
+        }
+
+        &.from-right {
+            animation: from-right 1s .6s both;
+        }
+
+        &.from-bottom {
+            animation: from-bottom 1s .6s both;
+        }
+
+        &.from-left {
+            animation: from-left 1s .6s both;
+        }
+    }
+    
+    .not-in-view {
+      opacity: 0;
+    }
+
+    .animate {
+      opacity: 0;
+    }
+    
+}

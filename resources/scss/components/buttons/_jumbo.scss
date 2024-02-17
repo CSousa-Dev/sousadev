@@ -1,0 +1,53 @@
+.button-jumbo {
+    
+    min-height: 6rem;
+    
+    a {
+        transition: all 0.3s ease; /* Adiciona uma transição suave */ 
+        padding: 2.4rem 4.8rem;
+        width: fit-content;
+        background-color: $background-primary;
+        margin-top: -8rem;
+        margin-bottom: .21rem;
+        color: $font-primary;
+        font-size: 2.2rem;
+        font-weight: 700;
+        border-radius: 1.6rem;
+        text-transform: capitalize;
+        cursor: pointer;
+        text-wrap: nowrap;
+
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    }
+    &:hover a{
+        margin-bottom: 0;
+        padding: 2.4rem 6.2rem;
+        font-size: 2.4rem;
+        
+    }
+
+    @media (max-width: 440px) {
+        a {
+            padding: 2.4rem 4.8rem;
+            font-size: 2rem;
+        }
+
+        &:hover a{
+            padding: 2.4rem 5.2rem;
+            font-size: 2.2rem;
+        }
+        
+    }
+
+    @media (max-width: 360px) {
+        a {
+            padding: 2.4rem 2.8rem;
+            font-size: 1.8rem;
+        }
+
+        &:hover a{
+            padding: 3rem 3.2rem;
+            font-size: 2rem;
+        }
+    }
+}

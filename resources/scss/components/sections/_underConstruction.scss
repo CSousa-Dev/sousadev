@@ -1,0 +1,22 @@
+#under-construction {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 8rem;
+
+    img {
+        width: 28%;
+    }
+
+    @media (max-width: 440px) {
+        margin-top: 3.6rem;
+        img {
+            height: 50vh;
+            width: 100%;
+        }
+
+        flex-direction: column-reverse;
+    }
+}

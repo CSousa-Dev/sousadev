@@ -1,0 +1,32 @@
+#presentation {
+    background-color: $background-primary;  
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    color: $font-primary;
+    height: 87vh;
+    min-height: 60rem;
+    width: 100%;
+    overflow: hidden;
+
+    position: relative; 
+
+    display: flex;
+    justify-content: space-between;
+    
+    @import './textContent';
+    @import './lights';
+    @import './photoProfile';
+    @include lateral-layout-padding;
+
+    @media (max-width: 440px) {
+        height: 90vh;
+
+        margin-bottom: 5.2rem;
+    }
+
+
+    @media (max-height: 600px){
+        height: 110vh;
+    }
+}
+
+
