@@ -18,14 +18,14 @@
             <p>Tornando melhor o dia a dia de pessoas e negócios através da tecnologia.
             </p>
             <div class=buttons-wrapper>
-                <x-buttons.link-button 
+                <x-buttons.LinkButton 
                     href="www.google.com">
                     Saiba mais
-                </x-buttons.link-button>
-                <x-buttons.link-button 
+                </x-buttons.LinkButton>
+                <x-buttons.LinkButton 
                     href="www.google.com">
                     Contato
-                </x-buttons.link-button>
+                </x-buttons.LinkButton>
             </div>
         </div>
         <img src="{{asset('images/Group 1.png')}}" alt="Imagem de exemplo">
