@@ -1,0 +1,18 @@
+// Cores
+$primary: #007bff;
+$secondary: #6c757d;
+$background-primary: #22242A;
+$background-secondary: #EAEAEA;
+$font-primary: #EAEAEA;
+$font-secondary: #5F6168;
+$font-tertiary: #000000;
+
+$layout-lateral-padding: 16vw;
+
+@media screen and (max-width: 480px) {
+    $layout-lateral-padding: 3vw;
+}
+
+@media screen and (max-width: 768px) {
+    $layout-lateral-padding: 5vw;
+}

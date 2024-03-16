@@ -1,0 +1,83 @@
+#presentation {
+    background-color: 
+    $background-primary;
+    color: $font-primary;
+    height: 85vh;
+    width: 100vw;
+
+    padding: 0 $layout-lateral-padding;
+
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+   
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .text-content{
+        width: 50%;
+        height: 50%;;
+         
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 6rem; 
+            height: .35rem;
+            background-color: $background-secondary;
+
+            border-radius: 2.5rem;
+        }
+
+        > p:first-child {
+            font-size: 2.4rem;
+            font-weight: 300;
+            margin-top: 2.4rem;
+        }
+
+        h2 {
+            font-size: 6.4rem;
+            font-weight: 600;
+        }
+
+        h1 {
+            font-size: 3.2rem;
+        }
+
+        p:last-of-type {
+            font-size: 1.6rem;
+            font-weight: 300;
+            margin-top: 2.4rem;
+            width: 80%;
+            margin-bottom: 2.4rem;
+        }
+
+        .buttons-wrapper {
+            display: flex;
+            gap: 1rem;
+        }
+    }
+
+    img {
+        height: 90%;
+        align-self: end;
+    }
+
+    .light{
+        position: absolute;
+        width: 50rem;
+        height: 20rem;
+
+        &.top {
+            top: 0;
+            left: 10vw;
+        }
+
+        &.bottom {
+            bottom: 10vh;
+            left: 10vw;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.link-button {
+    display: inline-block;
+    padding: 1.4rem 3.2rem;
+    margin: 0.5rem;
+    // border: 1px solid #000;
+    background-color: $background-secondary;
+    color: $font-tertiary;
+    text-align: center;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: .3s;
+
+    max-height: 4.6rem;
+    
+    border-radius: 1rem; 
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+    font-weight: 500;
+    
+    min-width: 16rem;
+    &:hover {
+        scale: 1.1;
+    }
+}
