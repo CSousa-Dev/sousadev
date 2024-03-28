@@ -8,7 +8,14 @@ $font-secondary: #5F6168;
 $font-tertiary: #000000;
 
 // Layout & Breakpoints
-$bp-1: 320px;
+$bpw-1: 321px;
+$bph-1: 480px;
+
+$bpw-2: 360px;
+$bph-2: 660px;
+
+$bpw-3: 420px;
+$bph-3: 820px;
 
 $layout-lateral-padding: 16vw;
 $layout-lateral-padding-bp1: 8vw; // Breakpoint 1 (bp1) = 320px 

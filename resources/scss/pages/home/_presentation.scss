@@ -149,110 +149,147 @@
 //         }
 //     }
 // }
+#presentation {
+    background-color: 
+    $background-primary;
+    color: $font-primary;
+    height: 95vh;
+    width: 100vw;
+    overflow: hidden; 
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
-@media (min-width: $bp-1){
-    #presentation {
-        background-color: 
-        $background-primary;
-        color: $font-primary;
-        height: 75vh;
-        width: 100vw;
-        overflow: hidden; 
-        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-
-        display: flex;
-        justify-content: space-between;
-        padding: 0 $layout-lateral-padding-bp1;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 $layout-lateral-padding-bp1;
 
 
-        .text-content{
-            width: 75%;
-            height: 60%;
-            text-shadow: black 0px 0px 10px;
-            z-index: 999;
-            margin-top:10vh;
-                
-            position: relative;
-            &::after {
-                content: '';
-                position: absolute; 
-                top: 0; 
-                left: 0; 
-                width: 6rem; 
-                height: .35rem;
-                background-color: $background-secondary;
-                
-                border-radius: 2.5rem;
-            }
+    .text-content{
+        width: 75%;
+        height: 60%;
+        text-shadow: black 0px 0px 5px;
+        z-index: 999;
+        margin-top:10vh;
             
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 6rem; 
+            height: .35rem;
+            background-color: $background-secondary;
+            
+            border-radius: 2.5rem;
+        }
+        
+        > p:first-child {
+            font-size: 1.8rem;
+            font-weight: 300;
+            margin-top: 2rem;
+        }
+        
+        h2 {
+            font-size: 2.8rem;
+            font-weight: 600;
+            margin-top: 1.2rem;
+        }
+        
+        h1 {
+            font-size: 2rem;
+            margin-top: 1.2rem;
+
+        }
+        
+        p:last-of-type {
+            font-size: 1.4rem;
+            font-weight: 300;
+            margin-top: 1.2rem;
+            width: 60%;
+            margin-bottom: 2.4rem;
+        }
+
+        .buttons-wrapper {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            gap: 0;
+            .link-button {
+                min-width: 8rem;
+                text-shadow: none;
+                line-height: 1.3rem;
+                width: 40vw;
+                max-width: 18rem;
+                padding: 1.4rem 1.6rem;
+                font-size: 1.3rem;
+                margin: 0 0 1rem 0;
+                box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            }
+        }
+    }
+
+    .light{
+        position: absolute;
+        width: 25rem;
+        height: 10rem;
+
+        &.top {
+            top: 0;
+            left: 5vw;
+        }
+
+        &.bottom {
+            bottom: 0;
+            left: 5vw;
+        }
+    }
+
+    position: relative;
+    img {
+        position: absolute;
+        right: -11rem;
+        bottom: 0; 
+        height: 40rem;
+    }
+}
+
+
+@media (min-width: $bpw-1){
+    #presentation {
+        height: 90vh;
+
+        .text-content {
+            width: 100%;
+            margin-top:15vh;
+
             > p:first-child {
+                font-size: 2.2rem;
+                font-weight: 300;
+                margin-top: 2.8rem;
+            }
+
+            h2 {
+                font-size: 3.2rem;
+            }
+
+            h1 {
+                font-size: 2.4rem;
+                width: 50%;
+            }
+
+            p:last-of-type {
                 font-size: 1.8rem;
                 font-weight: 300;
                 margin-top: 2rem;
-            }
-            
-            h2 {
-                font-size: 2.8rem;
-                font-weight: 600;
-                margin-top: 1.2rem;
-            }
-            
-            h1 {
-                font-size: 2rem;
-                margin-top: 1.2rem;
-
-            }
-            
-            p:last-of-type {
-                font-size: 1.4rem;
-                font-weight: 300;
-                margin-top: 1.2rem;
-                width: 80%;
+                width: 50%;
                 margin-bottom: 2.4rem;
-            }
-
-            .buttons-wrapper {
-                display: flex;
-                flex-direction: column;
-                padding: 0;
-                gap: 0;
-                .link-button {
-                    min-width: 8rem;
-                    text-shadow: none;
-                    line-height: 1.3rem;
-                    width: 40vw;
-                    max-width: 18rem;
-                    padding: 1.4rem 1.6rem;
-                    font-size: 1.3rem;
-                    margin: 0 0 1rem 0;
-                    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-                }
+                text-shadow: black 0px 0px 2px;
             }
         }
 
-        .light{
-            position: absolute;
-            width: 25rem;
-            height: 10rem;
-    
-            &.top {
-                top: 0;
-                left: 5vw;
-            }
-    
-            &.bottom {
-                bottom: 0;
-                left: 5vw;
-            }
-        }
-
-        position: relative;
         img {
-            position: absolute;
-            right: -11rem;
-            bottom: 0; 
-            height: 38rem;
-            filter: brightness(115%);
+            height: 50rem;
+            right: -17rem;
         }
     }
 }
