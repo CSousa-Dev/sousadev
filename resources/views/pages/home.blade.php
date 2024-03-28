@@ -18,11 +18,13 @@
             <p>Tornando melhor o dia a dia de pessoas e negócios através da tecnologia.
             </p>
             <div class=buttons-wrapper>
-                <x-buttons.LinkButton 
+                <x-buttons.LinkButton
+                    class="btn-presentation" 
                     href="www.google.com">
                     Saiba mais
                 </x-buttons.LinkButton>
                 <x-buttons.LinkButton 
+                    class=" btn-presentation" 
                     href="www.google.com">
                     Contato
                 </x-buttons.LinkButton>

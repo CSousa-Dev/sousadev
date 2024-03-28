@@ -7,12 +7,9 @@ $font-primary: #EAEAEA;
 $font-secondary: #5F6168;
 $font-tertiary: #000000;
 
+// Layout & Breakpoints
+$bp-1: 320px;
+
 $layout-lateral-padding: 16vw;
+$layout-lateral-padding-bp1: 8vw; // Breakpoint 1 (bp1) = 320px 
 
-@media screen and (max-width: 480px) {
-    $layout-lateral-padding: 3vw;
-}
-
-@media screen and (max-width: 768px) {
-    $layout-lateral-padding: 5vw;
-}
