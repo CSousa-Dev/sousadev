@@ -293,3 +293,43 @@
         }
     }
 }
+
+@media (min-width: $bpw-2){
+    #presentation {
+        height: 80vh;
+
+        .text-content {
+            width: 100%;
+            margin-top:15vh;
+
+            > p:first-child {
+                font-size: 2.4rem;
+                font-weight: 300;
+                margin-top: 2.8rem;
+            }
+
+            h2 {
+                font-size: 3.6rem;
+            }
+
+            h1 {
+                font-size: 2.8rem;
+                width: 50%;
+            }
+
+            p:last-of-type {
+                font-size: 2rem;
+                font-weight: 300;
+                margin-top: 2rem;
+                width: 50%;
+                margin-bottom: 2.4rem;
+                text-shadow: black 0px 0px 2px;
+            }
+        }
+
+        img {
+            height: 55rem;
+            right: -17rem;
+        }
+    }
+}
